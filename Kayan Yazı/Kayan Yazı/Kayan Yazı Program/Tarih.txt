@@ -1,0 +1,45 @@
+gosub Zaman_Al
+    
+   'Gün Bilgilerini Sakla
+
+    D0=rtcdate & $0F           
+    D1=(rtcdate& $F0)>>4
+    Sonuc=((D1 *10)+D0)
+
+    gun[0]=Sonuc/10
+    gun[1]=Sonuc//10
+
+    'Ay Bilgilerini Sakla
+
+    D0=rtcmontH & $0F           
+    D1=(rtcmonth& $F0)>>4
+    Sonuc=((D1 *10)+D0)
+
+    ay[0]=Sonuc/10
+    ay[1]=Sonuc//10
+    
+    'Yýl Bilgilerini Sakla
+
+    D0=rtcyeaR & $0F           
+    D1=(rtcyear& $F0)>>4
+    Sonuc=((D1 *10)+D0)
+
+    yil[0]=Sonuc/10
+    yil[1]=Sonuc//10
+    
+    Hafiza[0]=" ":Hafiza[1]=" ":Hafiza[2]=" ":
+    Hafiza[3]=Gun[0]+48:Hafiza[4]=Gun[1]+48:Hafiza[5]="-"
+    Hafiza[6]=Ay[0]+48:Hafiza[7]=Ay[1]+48:Hafiza[8]="-"
+    Hafiza[9]="2":Hafiza[10]="0":Hafiza[11]=Yil[0]+48:Hafiza[12]=Yil[1]+48
+    Hafiza[13]=" ":Hafiza[14]=" ":Hafiza[15]=" ":
+    
+    Sayac=0
+    
+    fOR A_Say1=0 to 15
+        Karakter=Hafiza[A_Say1]
+        Gosub Tablo1    
+    next
+    
+    For A_Say1=0 to 95
+        Dizi[A_Say1]=Mem[A_Say1]
+    next

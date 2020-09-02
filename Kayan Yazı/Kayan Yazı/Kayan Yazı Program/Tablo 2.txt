@@ -1,0 +1,66 @@
+Select case Karakter
+        case "A"
+            Mem[Sayac]=$7C:Mem[Sayac+1]=$7E:Mem[Sayac+2]=$13:Mem[Sayac+3]=$11:Mem[Sayac+4]=$13:Mem[Sayac+5]=$7E:Mem[Sayac+6]=$7C:Mem[Sayac+7]=$00:
+        case "B"
+            Mem[Sayac]=$7F:Mem[Sayac+1]=$7F:Mem[Sayac+2]=$49:Mem[Sayac+3]=$49:Mem[Sayac+4]=$49:Mem[Sayac+5]=$7F:Mem[Sayac+6]=$36:Mem[Sayac+7]=$00:
+        Case "C"
+            Mem[Sayac]=$3E:Mem[Sayac+1]=$7F:Mem[Sayac+2]=$41:Mem[Sayac+3]=$41:Mem[Sayac+4]=$41:Mem[Sayac+5]=$63:Mem[Sayac+6]=$22:Mem[Sayac+7]=$00:
+        case 199 'Ç
+            Mem[Sayac]=$3E:Mem[Sayac+1]=$7F:Mem[Sayac+2]=$C1:Mem[Sayac+3]=$C1:Mem[Sayac+4]=$41:Mem[Sayac+5]=$63:Mem[Sayac+6]=$22:Mem[Sayac+7]=$00:
+        case "D"
+            Mem[Sayac]=$7F:Mem[Sayac+1]=$7F:Mem[Sayac+2]=$41:Mem[Sayac+3]=$41:Mem[Sayac+4]=$7F:Mem[Sayac+5]=$3E:Mem[Sayac+6]=$00:Mem[Sayac+7]=$00:
+        case "E"
+            Mem[Sayac]=$7F:Mem[Sayac+1]=$7F:Mem[Sayac+2]=$49:Mem[Sayac+3]=$49:Mem[Sayac+4]=$49:Mem[Sayac+5]=$63:Mem[Sayac+6]=$63:Mem[Sayac+7]=$00:
+        case "F"
+            Mem[Sayac]=$7F:Mem[Sayac+1]=$7F:Mem[Sayac+2]=$09:Mem[Sayac+3]=$09:Mem[Sayac+4]=$09:Mem[Sayac+5]=$03:Mem[Sayac+6]=$03:Mem[Sayac+7]=$00:
+        case "G"
+            Mem[Sayac]=$3E:Mem[Sayac+1]=$7F:Mem[Sayac+2]=$41:Mem[Sayac+3]=$49:Mem[Sayac+4]=$49:Mem[Sayac+5]=$7B:Mem[Sayac+6]=$32:Mem[Sayac+7]=$00:
+        case 208 'Ð
+            Mem[Sayac]=$3C:Mem[Sayac+1]=$7E:Mem[Sayac+2]=$43:Mem[Sayac+3]=$53:Mem[Sayac+4]=$53:Mem[Sayac+5]=$76:Mem[Sayac+6]=$24:Mem[Sayac+7]=$00:
+        case "H"
+            Mem[Sayac]=$7F:Mem[Sayac+1]=$7F:Mem[Sayac+2]=$08:Mem[Sayac+3]=$08:Mem[Sayac+4]=$08:Mem[Sayac+5]=$7F:Mem[Sayac+6]=$7F:Mem[Sayac+7]=$00:
+        case "I"
+            Mem[Sayac]=$00:Mem[Sayac+1]=$00:Mem[Sayac+2]=$41:Mem[Sayac+3]=$7F:Mem[Sayac+4]=$7F:Mem[Sayac+5]=$41:Mem[Sayac+6]=$00:Mem[Sayac+7]=$00:
+        case 221 'Ý
+            Mem[Sayac]=$00:Mem[Sayac+1]=$00:Mem[Sayac+2]=$44:Mem[Sayac+3]=$7D:Mem[Sayac+4]=$7D:Mem[Sayac+5]=$44:Mem[Sayac+6]=$00:Mem[Sayac+7]=$00:
+        case "J"
+            Mem[Sayac]=$20:Mem[Sayac+1]=$60:Mem[Sayac+2]=$40:Mem[Sayac+3]=$41:Mem[Sayac+4]=$7F:Mem[Sayac+5]=$3F:Mem[Sayac+6]=$01:Mem[Sayac+7]=$00:
+        case "K"  
+            Mem[Sayac]=$7F:Mem[Sayac+1]=$7F:Mem[Sayac+2]=$08:Mem[Sayac+3]=$1C:Mem[Sayac+4]=$36:Mem[Sayac+5]=$63:Mem[Sayac+6]=$41:Mem[Sayac+7]=$00:
+        case "L"
+            Mem[Sayac]=$7F:Mem[Sayac+1]=$7F:Mem[Sayac+2]=$40:Mem[Sayac+3]=$40:Mem[Sayac+4]=$40:Mem[Sayac+5]=$60:Mem[Sayac+6]=$60:Mem[Sayac+7]=$00:
+        case "M"
+            Mem[Sayac]=$7F:Mem[Sayac+1]=$7F:Mem[Sayac+2]=$02:Mem[Sayac+3]=$0C:Mem[Sayac+4]=$02:Mem[Sayac+5]=$7F:Mem[Sayac+6]=$7F:Mem[Sayac+7]=$00:
+        case "N"
+            Mem[Sayac]=$7F:Mem[Sayac+1]=$7F:Mem[Sayac+2]=$06:Mem[Sayac+3]=$0C:Mem[Sayac+4]=$18:Mem[Sayac+5]=$7F:Mem[Sayac+6]=$7F:Mem[Sayac+7]=$00:
+        case "O"
+            Mem[Sayac]=$3E:Mem[Sayac+1]=$7F:Mem[Sayac+2]=$41:Mem[Sayac+3]=$41:Mem[Sayac+4]=$41:Mem[Sayac+5]=$7F:Mem[Sayac+6]=$3E:Mem[Sayac+7]=$00:
+        case "Ö"
+            Mem[Sayac]=$3C:Mem[Sayac+1]=$7E:Mem[Sayac+2]=$43:Mem[Sayac+3]=$42:Mem[Sayac+4]=$43:Mem[Sayac+5]=$7E:Mem[Sayac+6]=$3C:Mem[Sayac+7]=$00:
+        case "P"
+            Mem[Sayac]=$7F:Mem[Sayac+1]=$7F:Mem[Sayac+2]=$09:Mem[Sayac+3]=$09:Mem[Sayac+4]=$09:Mem[Sayac+5]=$06:Mem[Sayac+6]=$06:Mem[Sayac+7]=$00:
+        case "R"
+            Mem[Sayac]=$7F:Mem[Sayac+1]=$7F:Mem[Sayac+2]=$09:Mem[Sayac+3]=$09:Mem[Sayac+4]=$09:Mem[Sayac+5]=$76:Mem[Sayac+6]=$76:Mem[Sayac+7]=$00:
+        case "S"
+            Mem[Sayac]=$26:Mem[Sayac+1]=$6F:Mem[Sayac+2]=$49:Mem[Sayac+3]=$49:Mem[Sayac+4]=$49:Mem[Sayac+5]=$7B:Mem[Sayac+6]=$32:Mem[Sayac+7]=$00:
+        case 222 'Þ
+            Mem[Sayac]=$26:Mem[Sayac+1]=$6F:Mem[Sayac+2]=$49:Mem[Sayac+3]=$C9:Mem[Sayac+4]=$C9:Mem[Sayac+5]=$7B:Mem[Sayac+6]=$32:Mem[Sayac+7]=$00: 
+        case "T"
+            Mem[Sayac]=$01:Mem[Sayac+1]=$01:Mem[Sayac+2]=$7F:Mem[Sayac+3]=$7F:Mem[Sayac+4]=$01:Mem[Sayac+5]=$01:Mem[Sayac+6]=$00:Mem[Sayac+7]=$00:
+        case "U"
+            Mem[Sayac]=$3F:Mem[Sayac+1]=$7F:Mem[Sayac+2]=$40:Mem[Sayac+3]=$40:Mem[Sayac+4]=$40:Mem[Sayac+5]=$7F:Mem[Sayac+6]=$3F:Mem[Sayac+7]=$00:
+        case 220 'Ü
+            Mem[Sayac]=$3D:Mem[Sayac+1]=$7D:Mem[Sayac+2]=$40:Mem[Sayac+3]=$40:Mem[Sayac+4]=$40:Mem[Sayac+5]=$7D:Mem[Sayac+6]=$3D:Mem[Sayac+7]=$00: 
+        case "V"
+            Mem[Sayac]=$1F:Mem[Sayac+1]=$3F:Mem[Sayac+2]=$70:Mem[Sayac+3]=$70:Mem[Sayac+4]=$30:Mem[Sayac+5]=$1F:Mem[Sayac+6]=$0F:Mem[Sayac+7]=$00:
+        case "Y"
+            Mem[Sayac]=$07:Mem[Sayac+1]=$0F:Mem[Sayac+2]=$18:Mem[Sayac+3]=$70:Mem[Sayac+4]=$18:Mem[Sayac+5]=$0F:Mem[Sayac+6]=$07:Mem[Sayac+7]=$00:
+        case "Z"
+            Mem[Sayac]=$63:Mem[Sayac+1]=$73:Mem[Sayac+2]=$59:Mem[Sayac+3]=$4D:Mem[Sayac+4]=$47:Mem[Sayac+5]=$63:Mem[Sayac+6]=$61:Mem[Sayac+7]=$00:
+        case " "
+            Mem[sayac]=$00:Mem[sayac+1]=$00:Mem[sayac+2]=$00:Mem[Sayac+3]=$00:Mem[Sayac+4]=$00:Mem[Sayac+5]=$00:Mem[Sayac+6]=$00:Mem[Sayac+7]=$00:
+        case Else
+            Mem[sayac]=$00:Mem[sayac+1]=$00:Mem[sayac+2]=$00:Mem[Sayac+3]=$00:Mem[Sayac+4]=$00:Mem[Sayac+5]=$00:Mem[Sayac+6]=$00:Mem[Sayac+7]=$00:
+        end select
+        
+        Sayac=Sayac+8

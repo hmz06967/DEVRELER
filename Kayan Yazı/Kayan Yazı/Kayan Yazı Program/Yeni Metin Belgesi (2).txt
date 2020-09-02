@@ -1,0 +1,12 @@
+'Derece Ýþareti
+    Dizi[44]=$00:Dizi[45]=$06:Dizi[46]=$09:Dizi[47]=$09:Dizi[48]=$06:Dizi[49]=$00:
+    'C
+    Dizi[50]=$3E:Dizi[51]=$41:Dizi[52]=$41:Dizi[53]=$41:Dizi[54]=$22:Dizi[55]=$00:
+    
+    for A_Say1=0 to 27
+        Dizi[A_Say1]=$0
+    next
+    
+    for A_Say1=56 to 95
+        Dizi[A_Say1]=$0
+    next

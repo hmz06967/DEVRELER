@@ -1,0 +1,32 @@
+[PROJECT]
+Target=45-860GB.hex
+Development_Mode=
+Processor_Text=PIC16F877
+ToolSuite=CCS
+Processor=0x877F
+[45-860GB]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[mru-list]
+1=45-860GB
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[Opened Files]
+1=D:\Elektronik\Projelerim\Ýnternete Verdiklerim\45-860 Geniþ Bant\C\45-860GB.c
+2=D:\Elektronik\Projelerim\45-860 Geniþ Bant\C\45-860GB.c
+3=D:\Elektronik\Projelerim\45-860 Geniþ Bant\C\led.c
+4=D:\Elektronik\Projelerim\45-860 Geniþ Bant\C\i2c.c
+5=
+6=D:\Elektronik\Projelerim\45-860 Geniþ Bant\C\led.c
+7=D:\Elektronik\Projelerim\45-860 Geniþ Bant\C\45-860GB.lst
+8=
+[Target Data]
+OptionString=-p +FM
+FileList=45-860GB.c
+[Units]
+Count=1
+1=45-860GB.c (main)

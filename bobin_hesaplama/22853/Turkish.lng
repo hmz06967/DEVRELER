@@ -1,0 +1,181 @@
+File translated into English by Vladimir Denisenko and Andrew Buckin
+
+[TITLE]
+title = ExcellentIT - SMPS trafo hesaplama aracý
+version = Versiyon
+
+[ABOUT]
+s1 = Vladimir Denisenko, Russia, Pskov
+s2 = I would be thankful for financial support
+
+[MENU]
+s1 = Hakkýnda
+s2 = Yardým
+s3 = Dil
+s4 = Türkçe
+s5 = Ýpuçlarý
+
+[BASE CORES]
+s1 = Manyetik çekirdek
+s2 = Türü
+s3 = Diðer
+s4 = Malzeme
+s5 = Çekirdek Boyutu :
+s6 = Çekirdeðin Parametreleri:
+s7 = Etkili geçirgenlik
+s8 = Etkin kesit alaný
+s9 = Çekirdek pencere alaný 
+s10 = Manyetik yol uzunluðu 
+s11 = Ýç hacmi
+s12 = Ae, mm2
+s13 = An, mm2
+s14 = le, mm
+s15 = Ve, cm3
+s16 = Veritabanýna giriþ boyutlarý ekle
+s17 = Veritabanýna veri giriþi ekle
+s18 = Veritabanýna ekle
+s19 = Veritabanýndan sil
+s20 = Please enter the name for the new core when you add it to the database.\nThere is no need to manually add a prefix about it's form, the program does it automatically.
+s21 = If "Other" is chosen as the form of the core, please take the parameters from the manufacturer's documentation.
+s22 = The dimensions input is used for cores of a simple geometric form, like a ring or EE.\nDespite that the calculations are made with the geometric measures, the results from such a calculation might be inaccurate, due to the difference between the manufacturers' specifications and direct calculation with geometric measures.
+s23 = RM veya PQ gibi karmaþýk çekirdek türleri için parametreleri girin. 
+s24 = Eklemeden önce çekirdek için bir isim giriniz.
+s25 = Geçirgenliði girmeyi unuttunuz. 
+s26 = Tüm boyutlarý giriniz
+s27 = Tüm parametreleri giriniz
+s28 = Çekirdeði veritabanýndan kaldýrmak istediðinizden emin misiniz?
+
+[TOPOLOGY]
+s1 = Dönüþtürücü Topolojisi
+s2 = Push-Pull
+s3 = Half-Bridge
+s4 = Full bridge
+s5 = Ýpuçlarý menüsünden örnek devrelere bakabilirsiniz
+
+[INITIAL DATA]
+s1  = Baþlangýç verileri
+s2  = Aký yoðunluðu, max.
+s3  = Anahtarlama frekansý
+s4  = Çalýþma döngüsü, (Duty cycle max.)
+s5  = Ölü zaman
+s6  = RDS (on)
+s7  = Doygunluk gerilimi
+s8  = Sargý dolgu faktörü
+s9  = Akým yoðunluðu 
+s10 = Giriþ voltajý (min., rated, max.)
+s11 = Sekonder sargýlarý
+s12 = Regülasyon
+s13 = Voltaj
+s14 = Akým
+s15 = Yüksüz akým tüketimi 
+s16 = Diode's forward voltage
+s17 = Diameter of wire (desired), mm
+s18 = Rectification:
+s19 = Orta uçlu tek çýkýþ
+s20 = Orta uçlu çift (simetrik) çýkýþ
+s21 = Köprü
+s22 = TL494 vb.
+s23 = IR2153 vb.
+s24 = Usat.
+s25 = Rds(on)
+s26 = DC
+s27 = AC
+s28 = Hayýr
+s29 = Evet
+s30 = Önerilen ayarlar
+s31 = min.    rated   max.
+s32 = Flux density range is 50-300mT. The hysteresis losses depend on the combination of the flux density and frequency.\nAt high frequencies and high flux density, the losses will turn out to be so high, that the heating of the core will exceed reasonable limits.\nHence the peak flux density is limited automatically depending on the entered frequency.
+s33 = Frequency range is 25-300 kHz.\nWe see no reason for DIY to run faster due to higher switching losses and potentially worse EMI performance.
+s34 = This field is used for TL494 and similar ICs with a duty cycle that is independent of the frequency.
+s35 = This switch is used for TL494 and similar ICs, the maximum duty cycle of which is independent of the frequency.
+s36 = This field is used for ICs, for which the dead time is either fixed, like in IR2153, or is determined by external sources, like in SG3525, and is also independent of the frequency.
+s37 = This switch is used for ICs, for which the dead time is either fixed, like in IR2153, or is determined by external sources, like in SG3525, and is also independent of the frequency.
+s38 = In this field the resistance of the open channel has to be entered Rds(on).
+s39 = This switch is used for MOSFET.
+s40 = This field is for the BJT or IGBT saturation voltage.\nFor field-effect transistors this field shows the calculated value for the voltage loss of the transistor.
+s41 = This switch is used for BJT or IGBT saturation voltage.
+s42 = The winding fill factor describes what part of the core window is filled by the winding.\nThe winding fill factor can be in the range of 0.1-0.35, depending on the size of the core, lower values indicate smaller sizes.
+s43 = The current density depends on the cooling conditions and the size of the core.\nWith natural cooling one should choose 4-6A/mm^2.\nIf a fan is used, the current density can be set higher, up to 8-10A/mm^2.\nHigher current density indicates smaller cores.\nWith artificial cooling, the allowed current density depends on its intensity.
+s44 = The calculation is made assuming minimal input voltage.\nPlease note, that feedback is taken from the first output ONLY, so it is better if it will be the rail with the highest load.\nTo improve the regulation for all rails together try using the common choke.
+s45 = Calculation will use the rated input voltage for all output rails.\nOne does not really need to use common choke to improve the regulation for all rails together.
+s46 = These fields are for the minimal current consumption value, which is used for the calculation of the minimal inductance for the output choke.\nFor instance it can be the bias current of the amp etc.\nOne should not set the value too low though, because it can result in high inductance. It might be hard to make an inductor for a high inductance, and a low minimal current, because one has to consider not letting the core reach saturation.
+s47 = Please refer to the diode's datasheet and check the Vf parameter for the actual current.\nIf the Diodes aren't loaded with nominal current, then one can evaluate the decline of the entered current by the graph in the datasheet.
+s48 = Primary winding wire diameter.
+s49 = 1. Select the Flux density regarding frequency.\n2. Set the winding fill factor\n3. Set the Rds_on of MOSFET.\n4. Set the current density.
+s50 = Ýpuçlarý menüsünden örnek devrelere bakabilirsiniz
+s51 = Tel Türü
+s52 = Metrik, mm
+s53 = Standart AWG
+s54 = Tel boyutu (desired), AWG
+s55 = To use the desired wire diameters put a tick here.\nI suggest to let the program calculate the diameters of the wires and the number of the wires in the windings first to make the best of a given diameter.
+
+[RESULTS]
+s1 = Hesaplamanýn sonuçlarý
+s2 = Yaklaþýk trafo anma gücü
+s3 = Çýkýþ gücü
+s4 = Çekirdek kayýplarý
+s5 = Verimlilik (bakýr kayýplarý hariç)
+s6 = Sargý dolgu faktörü
+s7 = Primer indüktansý
+s8  = Primer mýknatýslanma akýmý 
+s9  = Primer akýmýn genliði
+s10 = Akým tüketimi
+s11 = Primary winding turns
+s12 = Primer sargýsý tel çapý
+s13 = Tel kaplamasýnýn çapý
+s14 = Sekonder sargýlarý
+s15 = Winding turns
+s16 = Çap mm õ numarasý
+s17 = Voltaj min, V
+s18 = Voltaj gereken, V
+s19 = Voltaj max, V
+s20 = Choke inductance
+s21 = For the Push-pull topology the inductance will be calculated for a single primary winding, not for both together.
+s22 = Sekonder sargý, Voltajý minimum genlik 
+s23 = Sekonder sargý, Voltajý anma genliði 
+s24 = Sekonder sargý, Voltajý Maksimum genlik
+s25 = Çalýþma döngüsü (Duty cycle)
+s26 = min.         gereken      max.
+
+[BUTTONS]
+s1 = Çýk
+s2 = Hesapla
+s3 = Yükle
+s4 = Kaydet
+s5 = .sav dosyadan ilk verileri yükleyin.
+s6 = .sav dosyasý olarak ilk veri kaydedin.
+
+[OTHERS]
+
+s1 = Dosya Aç
+s2 = Aç
+s3 = Farklý kaydet
+s4 = Kaydet
+s5 = Dosya adý
+s6 = Dosyayý deðiþtirin
+s7 = Ýptal
+s8 = Dikkat!
+s9 = Dosya kök klasöründe deðil
+s10 = V
+s11 = A
+s12 = W
+s13 = kHz
+s14 = mH
+s15 = µH
+s16 = µS
+s17 = Ohm
+s18 = mm
+s19 = T
+s20 = A/mm2
+s21 = Drop at the transistors is too large.\nIncorrectly selected transistors.\nLarge channel resistance or saturation voltage.
+s22 = Number of turns of the primary coil is < 4!\nReduce the frequency.
+s23 = Winding fill factor is above 0.3.\nCalculate layout of the winding or select a larger core.
+s24 = The desired diameter is replaced by the nearest standard diameter
+
+[HINTS]
+s1 = Dönüþtürücü Topolojisi düzeltme tipleri 
+s2 = Dönüþtürücü Topolojisi:
+s6 = Doðrultucu Türü
+s7 = Orta uçlu tek çýkýþ 
+s8 = Orta uçlu çift (simetrik) 
+s9 = Köprü  

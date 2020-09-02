@@ -1,0 +1,48 @@
+http://www.picproje.org/index.php?topic=2211.0
+https://www.frmtr.com/nokia/806085-bomba-sim-kart-kopyalama-bomba.html
+
+1-)DİKKAT !!! AYCELL' e ait Faturalı ve kontörlü , TURKCELL' e ait ocak 2003 tarihinden itibaren piyasaya sürülmeye başlanan Faturalı ve kontörlü hatları kopyalanamamaktadır.
+Bunun sebebi bu kartların COMP 128 V2 algoritmasıyla hazırlanmalarıdır.
+Bu algoritmayı henüz hiçbir yazılım desteklememektedir fakat bu kartların okutulabilmesi için çalışmalar devam etmektedir.
+Son zamanlarda bazı şahıslar bu kartların programlayıcı devreler yüzünden okutulamadığını iddia edip çok yüksek fiyatlara farklı devreler satmaya çalışmaktadırlar.
+Bu devreyi satın alıp çalıştırdığınızda ve herhangi bir comp 128v2 kartı okutamayıp bu şahısları aradığınızda sorunun sizin bilgisayarınızda olduğunu bilgisayarınızın programlayıcı devreyi desteklemediğini söylemektedirler. Bu sorunun programlayıcı devrelerle hiç bir alakası olmayıp tamamen kullanılan yazılımlar henüz comp 128v2 algoritmasını desteklemediğindendir.
+
+2-) GSM SIM KART KOPYALAYABİLMEK İÇİN NELER GEREKLİ ?
+İlk olarak bir bilgisayarınız olmalı aynı zamanda orijinal gsm sim kart' larınızdan gerekli verileri okuyabilecek, okuduğu verileri silvercard' a yazdırabilecek bir devre, bu devre ile birlikte kullanılacak yazılımlar ve boş bir silvercard.
+
+3-) NASIL YAPILIR ? Önce orijinal sim kartınızdan IMSI ve KI kodlarını programlayıcı devre ve SİMSCAN 2.0 programı ile okutmanız gerekiyor.
+İşin en uzun kısmı burası çünki kartınızdaki KI kodlarının okunma süresi tamamen bilgisayarınızın konfigurasyonuna bağlı
+örneğin celeron 400 işlemci ve 64 Mb ram bulunan bir bilgisayarda bir kartın okuma süresi yaklaşık 4 - 4.5 saat sürüyor.
+IMSI kodları ise 1 - 2 saniyede okunuyor. orijinal kartlarınızın IMSI ve KI kodlarını okuttuktan sonra piyasadan 1 adet silvercard ediniyorsunuz. Silvercard için lütfen bizimle bağlantı kurun.
+Programlayıcı devre ile birlikte size ücretsiz verilen cd içerisindeki SIM_EMU 5.0 dosyasının içinden bundan önce İCPROG 1.04 programını çalıştırıp sonra SİM_EMU 5.0 dosyasından bu ara boş silvercard 'tı programmer yani programlayıcıya takıyoruz tekrar İCPROG 1.04 programından SİM_EMU 5.0 dosyasından önce SEF50sTR.hex işaretleyip boş silver kartımıza yüklüyoruz.daha sonrada WİNPHOENİX programını çalıştırıp sıra SEE50s.hex işaretleyip boş silver kartımıza yüklüyoruz.
+ve bukadar boş silver kartımız şimdi Simkart Ölçülerinde kesip hazırlayarak Telefonumuza Takabiliriz
+Telefona Taktıktan sonra PİNKODU : 1111 'diye giriyoruz daima yeni karta bu kodu giriyoruz...
+
+
+Öncelikle menüden SİM EMU 5.0 buluyoruz
+bu sadece SİM EMU 'de olabilir içine girip Daha sonra ''Ayarlama'' seçeneğini seçin ve gelen menüden ''Pozisyon.'' seçeneğini seçin.
+Size PIN2 soracaktır. Buraya 1234 girin ve onaylayın
+
+Şimdi ''Pozisyon:''
+yazan bir ekran gelecek Şu anda henüz ilk hattı tanımladığımız için buraya 1 yazın ve yes tuşuna basın
+( yeni hatlar ekledikçe bir üst sayıyı verin örn.2 hat için 2 üçüncü hat için 3 gibi )
+
+''IMSI:''
+ekranı geldiğinde daha önceden bulduğunuz IMSI kodunu buraya girin ve ''Yes'' ile onaylayın.
+Şimdi KI kodunu soracaktır. Burayada KI kodunu girin ve yine ''Yes'' ile onaylayın.
+Şimdi size bu hat için PIN kodu soracaktır. PIN olarak istediğiniz PINi girin ancak bu kodu unutmayın çünkü telefonu kapatıp açarsanız her hat kendi PINi ile aktif olabiliyor.
+PIN girdikten sonra size PUK kodunu soracaktır. Buraya da 8 haneli istediğiniz bir PUK kodu girin.
+Bu girdiğiniz PUK kodu o hattın PUK kodu olacaktır ve eğer o hattın PIN' i kodu bloke olursa bu PUK kodu ile hattı aktif edebilirsiniz.
+
+Size tavsiyem tüm hatlar için PUK kodunu 12345678 aynı verin.
+
+Kopyalamak için Kullanabileceğiniz Programlar:
+-sim emu
+-master burner
+-Hat_Menu
+-icprog ,ekte
+-simscan
+-SimProf
+-supersim
+
+Konu Derlemedir.
